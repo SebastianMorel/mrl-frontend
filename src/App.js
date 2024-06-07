@@ -90,7 +90,7 @@ function App() {
   const [showSocial, setShowSocial] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
   const [projectStatuses, setProjectStatuses] = useState({});
-  const backendUrl = process.env.BACKEND_URL;
+  const backendUrl = 'https://mrl-backend-m8hi4tz67-sebastianmorels-projects.vercel.app';
 
   async function checkStatus(domain) {
     try {
