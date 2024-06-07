@@ -90,7 +90,7 @@ function App() {
   const [showSocial, setShowSocial] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
   const [projectStatuses, setProjectStatuses] = useState({});
-  const backendUrl = process.env.BACKEND_URL || 'http://localhost:3001';
+  const backendUrl = process.env.BACKEND_URL;
 
   async function checkStatus(domain) {
     try {
@@ -211,6 +211,7 @@ useEffect(() => {
             </a> soundtrack tier list
         </div>
       </div>
+      <SpeedInsights />
     </div>
   );
 }
