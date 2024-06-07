@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { 
   faGit, 
   faLinkedin
