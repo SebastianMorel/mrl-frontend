@@ -92,24 +92,47 @@ function App() {
   const [projectStatuses, setProjectStatuses] = useState({});
   const backendUrl = 'https://mrl-backend-m8hi4tz67-sebastianmorels-projects.vercel.app';
 
+
   async function checkStatus(domain) {
-    try {
-      const mrlUrl = `${backendUrl}/check-status?url=${encodeURIComponent(`https://${domain}`)}`
-      console.log(mrlUrl)
-      const response = await fetch(mrlUrl);
-      const data = await response.json();
-      setProjectStatuses(prevStatuses => ({
-        ...prevStatuses,
-        [domain]: data.status,
-      }));
-    } catch (error) {
-      console.error('Failed to check status:', error);
-      setProjectStatuses(prevStatuses => ({
-        ...prevStatuses,
-        [domain]: 'down',
-      }));
+  try {
+    const mrlUrl = `${backendUrl}/check-status?url=${encodeURIComponent(`https://${domain}`)}`;
+    console.log(mrlUrl);
+    const response = await fetch(mrlUrl);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
+    const data = await response.json();
+    setProjectStatuses(prevStatuses => ({
+      ...prevStatuses,
+      [domain]: data.status,
+    }));
+  } catch (error) {
+    console.error('Failed to check status:', error);
+    setProjectStatuses(prevStatuses => ({
+      ...prevStatuses,
+      [domain]: 'down',
+    }));
   }
+}
+
+//  async function checkStatus(domain) {
+//    try {
+//      const mrlUrl = `${backendUrl}/check-status?url=${encodeURIComponent(`https://${domain}`)}`
+//      console.log(mrlUrl)
+//      const response = await fetch(mrlUrl);
+//      const data = await response.json();
+//      setProjectStatuses(prevStatuses => ({
+//        ...prevStatuses,
+//        [domain]: data.status,
+//      }));
+//    } catch (error) {
+//      console.error('Failed to check status:', error);
+//      setProjectStatuses(prevStatuses => ({
+//        ...prevStatuses,
+//        [domain]: 'down',
+//      }));
+//    }
+//  }
 
   function renderLogosForProject(project) {
     return (
