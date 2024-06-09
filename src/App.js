@@ -205,7 +205,7 @@ useEffect(() => {
               stat.<span className="normal-color">mrl.dev</span>
             </a> probability calculators
             <br></br>
-            {renderLogosForProject("ostier.mrl.dev")}
+            {renderLogosForProject("ostier.top")}
             <a href="https://ostier.mrl.dev/" target="_blank" rel="noopener noreferrer">
               ostier.<span className="normal-color">mrl.dev</span>
             </a> soundtrack tier list
