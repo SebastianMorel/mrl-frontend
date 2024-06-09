@@ -96,7 +96,6 @@ function App() {
   async function checkStatus(domain) {
     try {
       const mrlUrl = `${backendUrl}/check-status?url=${encodeURIComponent(`https://${domain}`)}`
-      console.log(mrlUrl)
       const response = await fetch(mrlUrl);
       const data = await response.json();
       setProjectStatuses(prevStatuses => ({
@@ -104,7 +103,6 @@ function App() {
         [domain]: data.status,
       }));
     } catch (error) {
-      console.error('Failed to check status:', error);
       setProjectStatuses(prevStatuses => ({
         ...prevStatuses,
         [domain]: 'down',
