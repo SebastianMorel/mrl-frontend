@@ -81,6 +81,7 @@ const logos = {
 const projectLogos = {
   "statziki.com": ["django", "python", "heroku"],
   "ostier.mrl.dev": ["react", "gcloud", "heroku"],
+  "ostier.top": ["react", "gcloud", "heroku"],
 };
 
 function App() {
