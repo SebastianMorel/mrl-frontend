@@ -75,13 +75,22 @@ const logos = {
   gcloud: { 
     src: require('./logos/gcloud-logo.svg').default, 
     link: "https://cloud.google.com/"
+  },
+  vercel: { 
+    src: require('./logos/vercel-logo.svg').default, 
+    link: "https://vercel.com/"
+  },
+  railway: { 
+    src: require('./logos/railway-logo.svg').default, 
+    link: "https://railway.app/"
   }
 };
 
 const projectLogos = {
-  "statziki.com": ["django", "python", "heroku"],
-  "ostier.mrl.dev": ["react", "gcloud", "heroku"],
-  "ostier.top": ["react", "gcloud", "heroku"],
+  "statziki.com": ["django", "python", "railway"],
+  "stat.mrl.dev": ["django", "python", "railway"],
+  "ostier.mrl.dev": ["react", "gcloud", "vercel"],
+  "ostier.top": ["react", "gcloud", "vercel"],
 };
 
 function App() {
@@ -200,7 +209,7 @@ useEffect(() => {
           <span className="project-title">&gt;projects</span>
           <div className="project">
           {renderLogosForProject("statziki.com")}
-          <a href="https://statziki.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
               stat.<span className="normal-color">mrl.dev</span>
             </a> probability calculators
             <br></br>
