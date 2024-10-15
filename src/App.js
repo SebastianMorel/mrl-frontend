@@ -83,6 +83,14 @@ const logos = {
   railway: { 
     src: require('./logos/railway-logo.svg').default, 
     link: "https://railway.app/"
+  },
+  flask: { 
+    src: require('./logos/flask-logo.svg').default, 
+    link: "https://flask.palletsprojects.com/en/3.0.x/"
+  },
+  chatgpt: { 
+    src: require('./logos/ChatGPT_logo.svg').default, 
+    link: "https://openai.com/"
   }
 };
 
@@ -91,6 +99,7 @@ const projectLogos = {
   "stat.mrl.dev": ["django", "python", "railway"],
   "ostier.mrl.dev": ["react", "gcloud", "vercel"],
   "ostier.top": ["react", "gcloud", "vercel"],
+  "ai.mrl.dev": ["flask","python","chatgpt"]
 };
 
 function App() {
@@ -212,6 +221,11 @@ useEffect(() => {
           <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
               stat.<span className="normal-color">mrl.dev</span>
             </a> probability calculators
+            <br></br>
+            {renderLogosForProject("ai.mrl.dev")}
+            <a href="https://ai.mrl.dev/" target="_blank" rel="noopener noreferrer">
+              ai.<span className="normal-color">mrl.dev</span>
+            </a> ai chart maker
             <br></br>
             {renderLogosForProject("ostier.top")}
             <a href="https://ostier.mrl.dev/" target="_blank" rel="noopener noreferrer">
