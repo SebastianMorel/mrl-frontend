@@ -99,7 +99,8 @@ const projectLogos = {
   "stat.mrl.dev": ["django", "python", "railway"],
   "ostier.mrl.dev": ["react", "gcloud", "vercel"],
   "ostier.top": ["react", "gcloud", "vercel"],
-  "ai.mrl.dev": ["flask","python","chatgpt"]
+  "ai.mrl.dev": ["flask","python","chatgpt"],
+  "plotandpray.com": ["flask","python","chatgpt"],
 };
 
 function App() {
@@ -222,7 +223,7 @@ useEffect(() => {
               stat.<span className="normal-color">mrl.dev</span>
             </a> probability calculators
             <br></br>
-            {renderLogosForProject("ai.mrl.dev")}
+            {renderLogosForProject("plotandpray.com")}
             <a href="https://ai.mrl.dev/" target="_blank" rel="noopener noreferrer">
               ai.<span className="normal-color">mrl.dev</span>
             </a> ai chart maker
