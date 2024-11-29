@@ -218,7 +218,7 @@ useEffect(() => {
       <div className={`projects ${showProjects ? 'show-projects' : ''}`}>
           <span className="project-title">&gt;projects</span>
           <div className="project">
-          {renderLogosForProject("statziki.com")}
+          {renderLogosForProject("stat.mrl.dev")}
           <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
               stat.<span className="normal-color">mrl.dev</span>
             </a> probability calculators
