@@ -95,7 +95,7 @@ const logos = {
 };
 
 const projectLogos = {
-  "statziki.com": ["django", "python", "railway"],
+  "web-production-a16c1.up.railway.app": ["django", "python", "railway"],
   "stat.mrl.dev": ["django", "python", "railway"],
   "ostier.mrl.dev": ["react", "gcloud", "vercel"],
   "ostier.top": ["react", "gcloud", "vercel"],
@@ -218,7 +218,7 @@ useEffect(() => {
       <div className={`projects ${showProjects ? 'show-projects' : ''}`}>
           <span className="project-title">&gt;projects</span>
           <div className="project">
-          {renderLogosForProject("stat.mrl.dev")}
+          {renderLogosForProject("web-production-a16c1.up.railway.app")}
           <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
               stat.<span className="normal-color">mrl.dev</span>
             </a> probability calculators
