@@ -192,7 +192,7 @@ useEffect(() => {
       <div className="letter">l</div>
       <div className="dev">.dev</div>
       <div className={`name ${showName ? 'show-name' : ''}`}>sebastian</div>
-      <div className={`title ${showTitle ? 'show-title' : ''}`}>M.Sc. Industrial Management</div>
+      <div className={`title ${showTitle ? 'show-title' : ''}`}>Data analyst</div>
       <div className={`social-links ${showSocial ? 'show-social' : ''}`}>
       <a href="https://github.com/SebastianMorel" target="_blank" rel="noopener noreferrer">
         <i>
