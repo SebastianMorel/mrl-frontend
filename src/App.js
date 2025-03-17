@@ -93,7 +93,7 @@ const logos = {
     link: "https://openai.com/"
   },
   geojson: { 
-    src: require('./logos/geojson_logo.svg').default, 
+    src: require('./logos/geojson-logo.svg').default, 
     link: "https://geojson.org/"
   }
 };
