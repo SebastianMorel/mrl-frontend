@@ -105,7 +105,7 @@ const projectLogos = {
   "ostier.top": ["react", "gcloud", "vercel"],
   "ai.mrl.dev": ["flask","python","chatgpt"],
   "plotandpray.com": ["flask","python","chatgpt"],
-  "google.com": ["flask","python","chatgpt"],
+  "google.com": ["flask","python","geojson"],
 };
 
 function App() {
