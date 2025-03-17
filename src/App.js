@@ -91,6 +91,10 @@ const logos = {
   chatgpt: { 
     src: require('./logos/ChatGPT_logo.svg').default, 
     link: "https://openai.com/"
+  },
+  geojson: { 
+    src: require('./logos/geojson_logo.svg').default, 
+    link: "https://geojson.org/"
   }
 };
 
@@ -101,6 +105,7 @@ const projectLogos = {
   "ostier.top": ["react", "gcloud", "vercel"],
   "ai.mrl.dev": ["flask","python","chatgpt"],
   "plotandpray.com": ["flask","python","chatgpt"],
+  "google.com": ["flask","python","chatgpt"],
 };
 
 function App() {
@@ -232,6 +237,11 @@ useEffect(() => {
             <a href="https://ostier.mrl.dev/" target="_blank" rel="noopener noreferrer">
               ostier.<span className="normal-color">mrl.dev</span>
             </a> soundtrack tier list
+            <br></br>
+            {renderLogosForProject("google.com")}
+            <a href="https://swehome.mrl.dev/" target="_blank" rel="noopener noreferrer">
+              swehome.<span className="normal-color">mrl.dev</span>
+            </a> swedish housing data
         </div>
       </div>
       <SpeedInsights />
