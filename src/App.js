@@ -230,7 +230,7 @@ useEffect(() => {
             <br></br>
             {renderLogosForProject("plotandpray.com")}
             <a href="https://ai.mrl.dev/" target="_blank" rel="noopener noreferrer">
-              ai.<span className="normal-color">mrl.dev
+              ai.<span className="normal-color">mrl.dev</span>
             </a> ai chart maker <a href="https://github.com/SebastianMorel/plotandpray" target="_blank">[code]</a>
             <br></br>
             {renderLogosForProject("ostier.top")}
