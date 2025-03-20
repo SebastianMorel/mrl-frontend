@@ -226,12 +226,12 @@ useEffect(() => {
           {renderLogosForProject("web-production-a16c1.up.railway.app")}
           <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
               stat.<span className="normal-color">mrl.dev</span>
-            </a> probability calculators
+            </a> probability calculators <a href="https://github.com/SebastianMorel/statziki2">[code]</a></span>
             <br></br>
             {renderLogosForProject("plotandpray.com")}
             <a href="https://ai.mrl.dev/" target="_blank" rel="noopener noreferrer">
-              ai.<span className="normal-color">mrl.dev</span>
-            </a> ai chart maker
+              ai.<span className="normal-color">mrl.dev
+            </a> ai chart maker <a href="https://github.com/SebastianMorel/plotandpray">[code]</a></span>
             <br></br>
             {renderLogosForProject("ostier.top")}
             <a href="https://ostier.mrl.dev/" target="_blank" rel="noopener noreferrer">
