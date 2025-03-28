@@ -95,7 +95,15 @@ const logos = {
   geojson: { 
     src: require('./logos/geojson-logo.svg').default, 
     link: "https://geojson.org/"
-  }
+  },
+  sanity: { 
+    src: require('./logos/sanity-logo.svg').default, 
+    link: "https://www.sanity.io/"
+  },
+  powerbi: { 
+    src: require('./logos/powerbi-logo.svg').default, 
+    link: "https://www.microsoft.com/sv-se/power-platform/products/power-bi"
+  },
 };
 
 const projectLogos = {
@@ -106,6 +114,8 @@ const projectLogos = {
   "ai.mrl.dev": ["flask","python","chatgpt"],
   "plotandpray.com": ["flask","python","chatgpt"],
   "google.com": ["flask","python","geojson"],
+  "sanity.com": ["sanity", "powerbi", "vercel"],
+  "blog-two-alpha-77.vercel.app": ["sanity", "powerbi", "vercel"]
 };
 
 function App() {
@@ -223,6 +233,11 @@ useEffect(() => {
       <div className={`projects ${showProjects ? 'show-projects' : ''}`}>
           <span className="project-title">&gt;projects</span>
           <div className="project">
+          {renderLogosForProject("blog-two-alpha-77.vercel.app")}
+          <a href="https://blog.mrl.dev/" target="_blank" rel="noopener noreferrer">
+              blog.<span className="normal-color">mrl.dev</span>
+            </a> probability my blog
+          <br></br>
           {renderLogosForProject("web-production-a16c1.up.railway.app")}
           <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
               stat.<span className="normal-color">mrl.dev</span>
