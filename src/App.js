@@ -236,7 +236,7 @@ useEffect(() => {
           {renderLogosForProject("blog-two-alpha-77.vercel.app")}
           <a href="https://blog.mrl.dev/" target="_blank" rel="noopener noreferrer">
               blog.<span className="normal-color">mrl.dev</span>
-            </a> tutorials and thoughts
+            </a> tutorials and stuff
           <br></br>
           {renderLogosForProject("web-production-a16c1.up.railway.app")}
           <a href="https://stat.mrl.dev/" target="_blank" rel="noopener noreferrer">
