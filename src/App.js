@@ -116,7 +116,7 @@ const projectLogos = {
   "google.com": ["flask","python","geojson"],
   "sanity.com": ["sanity", "powerbi", "vercel"],
   "blog-two-alpha-77.vercel.app": ["sanity", "powerbi", "vercel"],
-  "swestad-kqb06emr6-morrisprojects.vercel.app": ["flask", "python", "geojson"]
+  "yahoo.com": ["flask", "python", "geojson"]
 };
 
 function App() {
@@ -254,7 +254,7 @@ useEffect(() => {
               ostier.<span className="normal-color">mrl.dev</span>
             </a> soundtrack tier list
             <br></br>
-            {renderLogosForProject("swestad-kqb06emr6-morrisprojects.vercel.app")}
+            {renderLogosForProject("yahoo.com")}
             <a href="https://swestad.mrl.dev/" target="_blank" rel="noopener noreferrer">
               swestad.<span className="normal-color">mrl.dev</span>
             </a> company city tierlist
