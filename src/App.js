@@ -254,12 +254,12 @@ useEffect(() => {
               ostier.<span className="normal-color">mrl.dev</span>
             </a> soundtrack tier list
             <br></br>
-            {renderLogosForProject("google.com")}
+            {renderLogosForProject("swestad-kqb06emr6-morrisprojects.vercel.app")}
             <a href="https://swestad.mrl.dev/" target="_blank" rel="noopener noreferrer">
               swestad.<span className="normal-color">mrl.dev</span>
             </a> company city tierlist
             <br></br>
-            {renderLogosForProject("swestad-kqb06emr6-morrisprojects.vercel.app")}
+            {renderLogosForProject("google.com")}
             <a href="https://swehome.mrl.dev/" target="_blank" rel="noopener noreferrer">
               swehome.<span className="normal-color">mrl.dev</span>
             </a> swedish housing data
